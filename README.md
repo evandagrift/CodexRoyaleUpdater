@@ -1,1 +1,1 @@
-# Royale-Tracker-Updater
+# CodexRoyaleUpdater
