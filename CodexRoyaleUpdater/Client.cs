@@ -13,7 +13,7 @@ namespace CodexRoyaleUpdater
 
 
         public static string officialBearerToken = "BEARER_TOKEN";
-        public static string codexBearerToekn = "BEARER_TOKEN";
+        public static string codexBearerToken = "BEARER_TOKEN";
 
         public HttpClient codexAPI;
         public HttpClient officialAPI;
@@ -28,7 +28,7 @@ namespace CodexRoyaleUpdater
             codexAPI = new HttpClient();
             codexAPI.BaseAddress = new Uri(codexAPIConnectionString);
             //pull from appsettings
-            codexAPI.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", codexBearerToekn);
+            codexAPI.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", codexBearerToken);
 
         }
     }
