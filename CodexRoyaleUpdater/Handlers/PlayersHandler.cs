@@ -133,6 +133,15 @@ namespace CodexRoyaleUpdater.Handlers
             catch { }
         }
 
+        public async Task AddPlayer(string tag)
+        {
+            //fetches current player by tag
+            Player player = await GetOfficialPlayer(tag);
+
+            //saves player to codex
+            await AddPlayer(player);
+
+        }
         //Updates player instance(It needs a set Id)
         public async Task UpdatePlayer(Player player)
         {
@@ -152,15 +161,6 @@ namespace CodexRoyaleUpdater.Handlers
 
         }
 
-        public async Task AddPlayer(string tag)
-        {
-            //fetches current player by tag
-            Player player = await GetOfficialPlayer(tag);
-
-            //saves player to codex
-            await AddPlayer(player);
-
-        }
         public async Task DeletePlayer(int id)
         {
             try
