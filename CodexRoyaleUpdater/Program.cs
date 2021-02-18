@@ -36,7 +36,7 @@ namespace CodexRoyaleUpdater
 
             //Get Clan
             // Get all battles
-            /*
+            
             //gets current clan with Tag
             clan = await clansHandler.GetOfficialClan(clanTag);
 
@@ -57,7 +57,7 @@ namespace CodexRoyaleUpdater
             //give count of battles added to the database
             Console.WriteLine("Initially added " + count + " battles.");
             count = 0;
-            */
+            
             //sets date times for comparison
             DateTime now = DateTime.UtcNow;
             DateTime lastFullSave = DateTime.UtcNow;
