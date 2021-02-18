@@ -102,6 +102,7 @@ namespace CodexRoyaleTests
         {
             List<Card> cards = await handler.GetAllCodexCards();
 
+
             Card cardToUpdate = cards[0];
 
             //I'm testing directly with the DB using this to keep from buggering up the data

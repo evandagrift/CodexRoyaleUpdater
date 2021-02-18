@@ -36,8 +36,9 @@ namespace CodexRoyaleTests
         {
             // makes sure there is a team in the DB            
             Team teamToGetSet = new Team() { Tag = "#TEST", Name = "TEST", TeamName = "TEST" };
-
             Team returnedTeam = await handler.GetSetTeamId(teamToGetSet);
+
+
             Team team = await handler.GetTeam(returnedTeam.TeamId);
 
             Assert.NotNull(team);
